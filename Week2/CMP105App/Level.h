@@ -24,6 +24,19 @@ private:
 	sf::RenderWindow* window;
 	Input* input;
 
-	// Add your object here
+	std::string mousePosDisplay;
+	std::string mouseDragDisplay;
+	sf::Vector2f mouseClickPos;
+	sf::Vector2f mouseReleasePos;
+	sf::Vector2f dragLength;
+	float dragMagnitude;
+	float colorFade;
+	bool clickStart;
+	bool clickEnd;
 
+	// Add your object here
+	sf::Font font;
+	sf::Text txt_mousePos;
+	sf::Text txt_mouseDrag;
+	sf::Vertex line_mouseDrag[2];
 };
